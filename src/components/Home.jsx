@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <section className="relative flex w-full h-screen " id="home">
+    <section className="relative flex w-full h-screen" id="home">
       <div className="absolute text-black inset-0 top-[120px] max-w-full px-20 xl:px-40 mx-auto sm:flex justify-between items-center ">
         <div className="flex flex-col gap-4 max-w-[400px] xl:max-w-[700px] ">
           <div>
@@ -31,7 +31,7 @@ const Home = () => {
         </div>
         <motion.div
           className="profile"
-          animate={{ y: [0, 30, 0] }}
+          animate={{ y: [0, -20, 0] }}
           transition={{ duration: 4.5, repeat: Infinity, repeatType: "loop" }}
         >
           <div className="glowing">
