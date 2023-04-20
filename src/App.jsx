@@ -8,7 +8,9 @@ const App = () => {
           <Navbar />
           <Home />
         </div>
-        <About />
+        <div>
+          <About />
+        </div>
         <div className="relative z-0"></div>
       </div>
     </BrowserRouter>
