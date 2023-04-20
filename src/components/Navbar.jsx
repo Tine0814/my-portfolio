@@ -21,11 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <motion.nav
-      className="w-full flex pt-6 px-20 pb-3 items-center fixed top-0 z-20  "
-      animate={{ scale: 1, transition: { duration: 1.5 } }}
-      initial={{ scale: 0 }}
-    >
+    <nav className="w-full flex pt-6 px-20 pb-3 items-center fixed top-0 z-20  ">
       <div className="w-full flex justify-between items-center mx-[70px]">
         <div className="bg-primary p-2 rounded-lg md:hidden z-20">
           <img
@@ -36,7 +32,15 @@ const Navbar = () => {
           />
         </div>
         <div className="">
-          <ul className="list-none hidden md:flex flex-row gap-7">
+          <motion.ul
+            className="list-none hidden md:flex flex-row gap-7"
+            animate={{
+              y: 0,
+              transition: { duration: 0.6 },
+              opacity: 1,
+            }}
+            initial={{ y: -100, opacity: 0 }}
+          >
             {navLinks.map((link) => (
               <li
                 key={link.id}
@@ -53,26 +57,38 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
         <div className="absolute left-[50%] translate-x-[-50%]">
-          <MotionLink
-            href="/"
-            className="bg-dark hidden md:flex rounded-full justify-center items-center text-2xl font-bold w-12 h-12 top-0"
-            whileHover={{ scale: 0.8 }}
-            onClick={() => {
-              setActive("");
-              window.scrollTo(0, 0);
-            }}
-            onTap={sequence}
-            animate={animation}
+          <motion.div
+            animate={{ scale: 1, transition: { duration: 0.8 } }}
+            initial={{ scale: 0 }}
           >
-            DB
-          </MotionLink>
+            <MotionLink
+              href="/"
+              className="bg-dark hidden md:flex rounded-full justify-center items-center text-2xl font-bold w-12 h-12 top-0"
+              whileHover={{ scale: 0.8 }}
+              onClick={() => {
+                setActive("");
+                window.scrollTo(0, 0);
+              }}
+              onTap={sequence}
+              animate={animation}
+            >
+              DB
+            </MotionLink>
+          </motion.div>
         </div>
-        <div>
+        <motion.div
+          animate={{
+            y: 0,
+            transition: { duration: 0.6 },
+            opacity: 1,
+          }}
+          initial={{ y: -100, opacity: 0 }}
+        >
           <DarkMode />
-        </div>
+        </motion.div>
       </div>
       <div
         className={`${
@@ -81,7 +97,7 @@ const Navbar = () => {
       >
         <ul className="list-none flex justify-start items-start flex-col gap-4"></ul>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
