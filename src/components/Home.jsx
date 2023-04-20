@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { navLinks } from "../constants";
 import { profile } from "../assets";
 import { motion } from "framer-motion";
+import { VscGithub } from "react-icons/vsc";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 const Home = () => {
   return (
@@ -10,24 +12,76 @@ const Home = () => {
       <div className="absolute text-black inset-0 top-[120px] max-w-full px-20 xl:px-40 mx-auto sm:flex justify-between items-center ">
         <div className="flex flex-col gap-4 max-w-[400px] xl:max-w-[700px] ">
           <div>
-            <h1 className="font-bold text-[40px]">
-              Hi, I'm <span className="text-primary">Dastine Bernardo</span>
-            </h1>
-            <h2 className="font-semibold text-[20px] text-secondary">
-              full-stack Developer
+            <h1 className="font-bold text-[50px]">Dastine Bernardo</h1>
+            <h2 className="text-[20px] text-secondary">
+              Aspiring <span className="text-primary">Web Developer </span>from
+              Philippines
             </h2>
           </div>
-          <p>
+          {/* <p>
             As a Skilled full-stack developer, I am dedicated to turning ideas
             into innovative web applications, Explore my latest project and
             articles, showcasing my experties in React.js and web development.
-          </p>
-          <motion.div
-            className="bg-primary text-light font-bold text-[12pxs] w-[130px] p-2 rounded-lg "
-            whileHover={{ scale: 1.3 }}
-          >
-            <button>Download CV</button>
-          </motion.div>
+          </p> */}
+          <div className="flex gap-4">
+            <motion.div
+              className="bg-primary text-center text-light font-bold text-[12px] w-[80px] p-2 rounded-lg "
+              whileHover={{ scale: 1.3 }}
+            >
+              <button>View CV</button>
+            </motion.div>
+            <motion.div
+              className="bg-primary text-center text-light font-bold text-[12px] w-[80px] p-2 rounded-lg "
+              whileHover={{ scale: 1.3 }}
+            >
+              <button>Project</button>
+            </motion.div>
+            <div className="">
+              <ul className="flex flex-row gap-2 text-black">
+                <motion.li
+                  className=""
+                  whileHover={{ y: [0, -5] }}
+                  transition={{
+                    duration: 0.5,
+                  }}
+                >
+                  <a href="https://github.com/Tine0814 " target="_blank">
+                    <VscGithub size="1.5rem" />
+                  </a>
+                </motion.li>
+                <motion.li
+                  whileHover={{ y: [0, -5] }}
+                  transition={{
+                    duration: 0.5,
+                  }}
+                >
+                  <a href="">
+                    <BsFacebook size="1.5rem" />
+                  </a>
+                </motion.li>
+                <motion.li
+                  whileHover={{ y: [0, -5] }}
+                  transition={{
+                    duration: 0.5,
+                  }}
+                >
+                  <a href="">
+                    <AiFillInstagram size="1.5rem" />
+                  </a>
+                </motion.li>
+                <motion.li
+                  whileHover={{ y: [0, -5] }}
+                  transition={{
+                    duration: 0.5,
+                  }}
+                >
+                  <a href="">
+                    <AiFillLinkedin size="1.5rem" />
+                  </a>
+                </motion.li>
+              </ul>
+            </div>
+          </div>
         </div>
         <motion.div
           className="profile"

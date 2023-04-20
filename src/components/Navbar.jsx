@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import { close, menu } from "../assets";
 import { motion, useAnimationControls } from "framer-motion";
-import { VscGithub } from "react-icons/vsc";
-import { BsFacebook } from "react-icons/bs";
-import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import DarkMode from "./darkMode/DarkMode";
 
 const MotionLink = motion(Link);
 
@@ -59,7 +57,7 @@ const Navbar = () => {
         </div>
         <div className="absolute left-[50%] translate-x-[-50%]">
           <MotionLink
-            href="https://www.youtube.com/"
+            href="/"
             className="bg-dark hidden md:flex rounded-full justify-center items-center text-2xl font-bold w-12 h-12 top-0"
             whileHover={{ scale: 0.8 }}
             onClick={() => {
@@ -72,29 +70,8 @@ const Navbar = () => {
             DB
           </MotionLink>
         </div>
-        <div className="">
-          <ul className="hidden md:flex flex-row gap-4 text-black">
-            <motion.li className="" whileHover={{ scale: 0.8 }}>
-              <a href="https://github.com/Tine0814">
-                <VscGithub size="1.5rem" />
-              </a>
-            </motion.li>
-            <motion.li whileHover={{ scale: 0.8 }}>
-              <a href="">
-                <BsFacebook size="1.5rem" />
-              </a>
-            </motion.li>
-            <motion.li whileHover={{ scale: 0.8 }}>
-              <a href="">
-                <AiFillInstagram size="1.5rem" />
-              </a>
-            </motion.li>
-            <motion.li whileHover={{ scale: 0.8 }}>
-              <a href="">
-                <AiFillLinkedin size="1.5rem" />
-              </a>
-            </motion.li>
-          </ul>
+        <div>
+          <DarkMode />
         </div>
       </div>
       <div
