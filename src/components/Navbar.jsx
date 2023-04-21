@@ -46,12 +46,16 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title ? "text-primary" : "text-black"
-                } hover:text-primary text-[14px] font-medium cursor-pointer underlineHover`}
+                } hover:text-primary text-[20px] font-medium cursor-pointer underlineHover`}
                 onClick={() => setActive(link.title)}
               >
                 <a
                   href={`#${link.id}`}
-                  className={`${active === link.title ? "active" : ""}`}
+                  className={`${
+                    active === link.title
+                      ? "border-b-[3.3px] border-primary"
+                      : ""
+                  } `}
                 >
                   {link.title}
                 </a>
@@ -66,7 +70,7 @@ const Navbar = () => {
           >
             <MotionLink
               href="/"
-              className="bg-dark hidden md:flex rounded-full justify-center items-center text-2xl font-bold w-12 h-12 top-0"
+              className="bg-black hidden md:flex rounded-full justify-center items-center text-2xl font-bold w-12 h-12 top-0"
               whileHover={{ scale: 0.8 }}
               onClick={() => {
                 setActive("");

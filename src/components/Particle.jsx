@@ -23,7 +23,7 @@ const Particle = () => {
       options={{
         background: {
           color: {
-            value: "#fff",
+            // value: "#fff",
           },
         },
         fpsLimit: 120,
@@ -70,7 +70,7 @@ const Particle = () => {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 4,
             straight: false,
           },
           number: {
