@@ -1,5 +1,5 @@
 import React from "react";
-import { MoonIcon, SunIcon } from "./Moon";
+import { MoonIcon, SunIcon } from "./Icon";
 import "./DarkMode.css";
 
 const DarkMode = () => {

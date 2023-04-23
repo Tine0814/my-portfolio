@@ -2,16 +2,31 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { profile } from "../assets";
 import { motion } from "framer-motion";
-import { VscGithub } from "react-icons/vsc";
-import { BsFacebook } from "react-icons/bs";
-import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import {
+  BsFacebook,
+  VscGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "../assets/index";
 import Particle from "./Particle";
 import WhatICanDo from "./WhatICanDo";
 
+const PDF_FILE_URL = "http://localhost:5173/p.pdf";
+
 const Home = () => {
+  const downloadFileAtURL = (url) => {
+    const fileName = url.split("/").pop();
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+
   return (
     <div className="text-black">
-      <section className="relative flex w-full h-screen" id="home">
+      <section className="relative flex w-full h-screen " id="home">
         <div className="w-full flex justify-center items-center flex-col-reverse p-20">
           <div className="flex flex-col max-w-[400px] xl:max-w-[700px] ">
             <div className="pointer-events-none text-center">
@@ -46,7 +61,7 @@ const Home = () => {
           </p> */}
             <div className="flex gap-3 text-[20px] justify-center ">
               <motion.div
-                className="bg-primary text-light w-[80px] h-[30px] grid place-items-center rounded-md "
+                className="bg-primary text-light w-[90px] h-[30px] grid place-items-center rounded-md "
                 whileHover={{ scale: 1.2 }}
                 whileInView={{
                   x: 0,
@@ -55,7 +70,13 @@ const Home = () => {
                 }}
                 initial={{ x: -100, opacity: 0 }}
               >
-                <button>View CV</button>
+                <button
+                  onClick={() => {
+                    downloadFileAtURL(PDF_FILE_URL);
+                  }}
+                >
+                  Download CV
+                </button>
               </motion.div>
               <motion.div
                 className="bg-secondary text-light w-[80px] h-[30px] grid place-items-center rounded-md "
