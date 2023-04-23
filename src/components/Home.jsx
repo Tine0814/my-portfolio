@@ -54,11 +54,6 @@ const Home = () => {
                 from Philippines
               </motion.h2>
             </div>
-            {/* <p>
-            As a Skilled full-stack developer, I am dedicated to turning ideas
-            into innovative web applications, Explore my latest project and
-            articles, showcasing my experties in React.js and web development.
-          </p> */}
             <div className="flex gap-3 text-[20px] justify-center ">
               <motion.div
                 className="bg-primary text-light w-[90px] h-[30px] grid place-items-center rounded-md "
@@ -88,7 +83,7 @@ const Home = () => {
                 }}
                 initial={{ y: 100, opacity: 0 }}
               >
-                <button>Projects</button>
+                <Link href="/p.pdf">Projects</Link>
               </motion.div>
               <motion.div
                 className="flex items-center"

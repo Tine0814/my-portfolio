@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { dastine } from "../assets";
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ const About = () => {
               transition: { duration: 0.8 },
               opacity: 1,
             }}
-            initial={{ y: 200, x: 200, opacity: 0.3 }}
+            initial={{ y: -200, x: 200, opacity: 0.3 }}
           >
             Hello! My name is Dastine, and I love turning my ideas into
             innovative web applications. My interest in web development started
@@ -48,6 +49,7 @@ const About = () => {
             to further my abilities.
           </motion.p>
         </div>
+        <div className="bg-red-200 w-[380px] h-[380px]"></div>
       </div>
     </section>
   );
