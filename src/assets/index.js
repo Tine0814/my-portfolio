@@ -4,6 +4,8 @@ import instagram from "./tech/instagram.svg";
 import linkedin from "./tech/linkedin.svg";
 import profile from "./profile.png";
 import dastine from "./dastine.png";
+import clinic_inventory from "./clinic_inventory.png";
+import netflix from "./netflix.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import { MdDesignServices } from "react-icons/md";
@@ -17,6 +19,8 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiPhp, SiMysql, SiBootstrap, SiTailwindcss } from "react-icons/si";
 
 export {
+  clinic_inventory,
+  netflix,
   BsGit,
   github,
   facebook,

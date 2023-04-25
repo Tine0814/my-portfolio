@@ -18,14 +18,23 @@ const Experience = () => {
   return (
     <section className="w-full h-screen flex justify-center items-center text-black dark:text-light ">
       <div className="text-center mt-[-5rem]">
-        <div>
-          <h1 className="text-[30px]">1 Year</h1>
-          <p className="text-[25px]">
-            Experience as a <span className="text-primary">Web Developer</span>
-          </p>
-        </div>
-        <div className="flex gap-[5rem] justify-center p-10">
-          <div className="bg-white  dark:bg-primaryDark h-[250px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
+        <motion.div
+          whileInView={{ y: 0, transition: { duration: 0.8 }, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+        >
+          <h1 className="text-[60px] text-primary">Skills</h1>
+          <p className="text-[25px] mt-[-2rem]">My Technical Level</p>
+        </motion.div>
+        <div className="flex gap-[5rem] justify-center p-10 mt-[4rem]">
+          <motion.div
+            className="bg-white  dark:bg-primaryDark h-[250px] p-5 flex flex-col gap-3 rounded-lg shadow-xl"
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.8, delay: 0.2 },
+            }}
+            initial={{ y: -80, opacity: 0 }}
+          >
             <h1 className="text-[30px]">Front-End</h1>
             <div className="flex gap-2">
               <IconButton text="HTML" color="bg-[#FF5733]">
@@ -52,8 +61,16 @@ const Experience = () => {
                 <SiTailwindcss size={40} />
               </IconButton>
             </div>
-          </div>
-          <div className="bg-white dark:bg-primaryDark h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
+          </motion.div>
+          <motion.div
+            className="bg-white dark:bg-primaryDark h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl"
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.8, delay: 0.5 },
+            }}
+            initial={{ y: -80, opacity: 0 }}
+          >
             <h1 className="text-[30px]">Back-End</h1>
             <div className="flex gap-2">
               <IconButton text="PHP" color="bg-[#8993be]">
@@ -67,8 +84,16 @@ const Experience = () => {
                 <SiMysql size={40} />
               </IconButton>
             </div>
-          </div>
-          <div className="bg-white  dark:bg-primaryDark h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
+          </motion.div>
+          <motion.div
+            className="bg-white  dark:bg-primaryDark h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl"
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.8, delay: 0.8 },
+            }}
+            initial={{ y: -80, opacity: 0 }}
+          >
             <h1 className="text-[30px]">Others</h1>
             <div className="flex gap-2">
               <IconButton text="github">
@@ -78,7 +103,7 @@ const Experience = () => {
                 <BsGit size={40} />
               </IconButton>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

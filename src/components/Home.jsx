@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div className="text-black dark:text-light">
       <section className="relative flex w-full h-screen " id="home">
-        <div className="w-full flex justify-center items-center flex-col-reverse p-20">
+        <div className="w-full flex justify-center items-center flex-col-reverse p-10 mt-[-5rem]">
           <div className="flex flex-col max-w-[400px] xl:max-w-[700px] ">
             <div className="pointer-events-none text-center">
               <motion.h1
@@ -76,9 +76,9 @@ const Home = () => {
                   transition: { duration: 0.8 },
                   opacity: 1,
                 }}
-                initial={{ y: 100, opacity: 0 }}
+                initial={{ y: 30, opacity: 0 }}
               >
-                <Link href="/p.pdf">Projects</Link>
+                <a href="#project">Projects</a>
               </motion.div>
               <motion.div
                 className="flex items-center"
@@ -142,7 +142,6 @@ const Home = () => {
             </motion.div>
           </motion.div>
         </div>
-        <Particle />
       </section>
       <WhatICanDo />
     </div>

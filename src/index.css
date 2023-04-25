@@ -194,3 +194,40 @@
   background: #f06;
   border-radius: 10px;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Set the color of the active pagination bullet */
+
+/* Set the color of the inactive pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #f06;
+}
+
+/* Increase the size of the pagination bullets */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  border-radius: 50%;
+}
