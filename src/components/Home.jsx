@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { profile } from "../assets";
 import { motion } from "framer-motion";
-import {
-  BsFacebook,
-  VscGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "../assets/index";
+import { socials } from "../constants";
 import Particle from "./Particle";
 import WhatICanDo from "./WhatICanDo";
 
@@ -25,7 +20,7 @@ const Home = () => {
   };
 
   return (
-    <div className="text-black">
+    <div className="text-black dark:text-light">
       <section className="relative flex w-full h-screen " id="home">
         <div className="w-full flex justify-center items-center flex-col-reverse p-20">
           <div className="flex flex-col max-w-[400px] xl:max-w-[700px] ">
@@ -74,7 +69,7 @@ const Home = () => {
                 </button>
               </motion.div>
               <motion.div
-                className="bg-secondary text-light w-[80px] h-[30px] grid place-items-center rounded-md "
+                className="bg-primary text-light w-[80px] h-[30px] grid place-items-center rounded-md  "
                 whileHover={{ scale: 1.2 }}
                 whileInView={{
                   y: 0,
@@ -94,48 +89,21 @@ const Home = () => {
                 }}
                 initial={{ x: 100, opacity: 0 }}
               >
-                <ul className="flex flex-row gap-2 text-black">
-                  <motion.li
-                    className=""
-                    whileHover={{ y: [0, -5] }}
-                    transition={{
-                      duration: 0.3,
-                    }}
-                  >
-                    <a href="https://github.com/Tine0814 " target="_blank">
-                      <VscGithub size="1.5rem" />
-                    </a>
-                  </motion.li>
-                  <motion.li
-                    whileHover={{ y: [0, -5] }}
-                    transition={{
-                      duration: 0.3,
-                    }}
-                  >
-                    <a href="">
-                      <BsFacebook size="1.5rem" />
-                    </a>
-                  </motion.li>
-                  <motion.li
-                    whileHover={{ y: [0, -5] }}
-                    transition={{
-                      duration: 0.3,
-                    }}
-                  >
-                    <a href="">
-                      <AiFillInstagram size="1.5rem" />
-                    </a>
-                  </motion.li>
-                  <motion.li
-                    whileHover={{ y: [0, -5] }}
-                    transition={{
-                      duration: 0.3,
-                    }}
-                  >
-                    <a href="">
-                      <AiFillLinkedin size="1.5rem" />
-                    </a>
-                  </motion.li>
+                <ul className="flex flex-row gap-2 text-black dark:text-light">
+                  {socials.map((social) => (
+                    <motion.li
+                      key={social.key}
+                      className=""
+                      whileHover={{ y: [0, -5] }}
+                      transition={{
+                        duration: 0.3,
+                      }}
+                    >
+                      <a href={social.url} target="_blank">
+                        {social.icon}
+                      </a>
+                    </motion.li>
+                  ))}
                 </ul>
               </motion.div>
             </div>
@@ -174,7 +142,7 @@ const Home = () => {
             </motion.div>
           </motion.div>
         </div>
-        {/* <Particle /> */}
+        <Particle />
       </section>
       <WhatICanDo />
     </div>

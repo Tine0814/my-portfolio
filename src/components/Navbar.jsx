@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full flex pt-6 px-20 pb-3 items-center fixed top-0 z-20 bg-">
+    <nav className="w-full flex pt-6 px-20 pb-3 items-center fixed top-0 z-20 bg-light dark:bg-dark">
       <div className="w-full flex justify-between items-center mx-[70px]">
         <div className="bg-primary p-2 rounded-lg md:hidden z-20">
           <img
@@ -45,7 +45,9 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-primary" : "text-black"
+                  active === link.title
+                    ? "text-primary"
+                    : "text-black dark:text-white"
                 } hover:text-primary text-[20px] font-medium cursor-pointer underlineHover`}
                 onClick={() => setActive(link.title)}
               >
@@ -70,7 +72,7 @@ const Navbar = () => {
           >
             <MotionLink
               href="/"
-              className="bg-black hidden md:flex rounded-full justify-center items-center text-2xl font-bold w-12 h-12 top-0"
+              className="bg-dark dark:bg-light dark:text-dark hidden md:flex rounded-full justify-center items-center text-2xl font-bold w-12 h-12 top-0"
               whileHover={{ scale: 0.8 }}
               onClick={() => {
                 setActive("");

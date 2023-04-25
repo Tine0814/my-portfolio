@@ -113,7 +113,7 @@
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #03bcf4;
+  background-color: #f06;
   content: "";
   transition: width 0.2s;
 }
@@ -147,7 +147,7 @@
   height: 98%;
   box-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 0px #03bcf4,
     0 0 0px #03bcf4, 0 0 0px #03bcf4;
-  background: linear-gradient(#f06, #3cf);
+  background: linear-gradient(#510020, #f06);
   border-radius: 50%;
   /* animation: rotate 5s linear infinite; */
   filter: blur(10px);
@@ -191,6 +191,6 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #03bcf4;
+  background: #f06;
   border-radius: 10px;
 }

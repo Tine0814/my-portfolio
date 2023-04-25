@@ -1,4 +1,10 @@
 import { MdDesignServices, FaMobile, BsDatabaseGear } from "../assets/index";
+import {
+  BsFacebook,
+  VscGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "../assets/index";
 
 export const navLinks = [
   {
@@ -10,8 +16,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "portfolio",
+    title: "Portfolio",
   },
   {
     id: "contact",
@@ -35,5 +41,27 @@ export const offers = [
     title: "Back-end",
     description:
       "Develop backend components of web application and create server-side logic and database (PHP, MySQL)",
+  },
+];
+export const socials = [
+  {
+    icon: <VscGithub size="1.5rem" />,
+    url: "https://github.com/Tine0814 ",
+    key: "github",
+  },
+  {
+    icon: <AiFillLinkedin size="1.5rem" />,
+    url: "https://github.com/Tine0814 ",
+    key: "linkedin",
+  },
+  {
+    icon: <AiFillInstagram size="1.5rem" />,
+    url: "https://github.com/Tine0814 ",
+    key: "instagram",
+  },
+  {
+    icon: <BsFacebook size="1.5rem" />,
+    url: "https://github.com/Tine0814 ",
+    key: "facebook",
   },
 ];

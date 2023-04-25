@@ -1,18 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Navbar, Home, About } from "./components";
-import Experience from "./components/Experience";
+import { Navbar, Home, About, Skills } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="realative z-0 bg-light w-full min-h-screen">
+      <div className="realative z-0 bg-light dark:bg-dark w-full min-h-screen">
         <div className="">
           <Navbar />
           <Home />
         </div>
         <div>
           <About />
-          <Experience />
+          <Skills />
         </div>
         <div className="relative z-0"></div>
       </div>

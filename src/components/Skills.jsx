@@ -16,7 +16,7 @@ import {
 
 const Experience = () => {
   return (
-    <section className="w-full h-screen flex justify-center items-center text-black ">
+    <section className="w-full h-screen flex justify-center items-center text-black dark:text-light ">
       <div className="text-center mt-[-5rem]">
         <div>
           <h1 className="text-[30px]">1 Year</h1>
@@ -25,7 +25,7 @@ const Experience = () => {
           </p>
         </div>
         <div className="flex gap-[5rem] justify-center p-10">
-          <div className="bg-white h-[250px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
+          <div className="bg-white  dark:bg-primaryDark h-[250px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
             <h1 className="text-[30px]">Front-End</h1>
             <div className="flex gap-2">
               <IconButton text="HTML" color="bg-[#FF5733]">
@@ -53,7 +53,7 @@ const Experience = () => {
               </IconButton>
             </div>
           </div>
-          <div className="bg-white h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
+          <div className="bg-white dark:bg-primaryDark h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
             <h1 className="text-[30px]">Back-End</h1>
             <div className="flex gap-2">
               <IconButton text="PHP" color="bg-[#8993be]">
@@ -68,7 +68,7 @@ const Experience = () => {
               </IconButton>
             </div>
           </div>
-          <div className="bg-white h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
+          <div className="bg-white  dark:bg-primaryDark h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl">
             <h1 className="text-[30px]">Others</h1>
             <div className="flex gap-2">
               <IconButton text="github">

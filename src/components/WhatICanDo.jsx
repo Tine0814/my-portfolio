@@ -6,7 +6,7 @@ const WhatICanDo = () => {
   return (
     <section className="">
       <motion.div
-        className="bg-white w-[70%] m-auto mt-[2rem] shadow-xl rounded-xl pointer-events-none"
+        className="bg-white dark:bg-primaryDark w-[70%] m-auto mt-[2rem] shadow-xl rounded-xl pointer-events-none"
         whileInView={{
           y: 0,
           transition: { duration: 0.8 },
@@ -14,7 +14,7 @@ const WhatICanDo = () => {
         }}
         initial={{ y: 80, opacity: 0 }}
       >
-        <div className="text-center font-bold text-[30px] text-light mt-[2rem] bg-secondary shadow-md rounded-xl">
+        <div className="text-center font-bold text-[30px] text-black dark:text-light mt-[2rem]">
           <h1>What I can provide?</h1>
         </div>
         <div className="flex flex-wrap justify-between m-[2rem] p-5 mx-[7rem] text-center gap-3">
