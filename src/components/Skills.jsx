@@ -16,16 +16,18 @@ import {
 
 const Experience = () => {
   return (
-    <section className="w-full h-screen flex justify-center items-center text-black dark:text-light ">
-      <div className="text-center mt-[-5rem]">
+    <section className=" relative w-full h-screen flex justify-center items-center mt-[-25rem] md:mt-0 text-gray-500">
+      <div className="text-center mt-[-5rem] absolute top-40">
         <motion.div
           whileInView={{ y: 0, transition: { duration: 0.8 }, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
         >
-          <h1 className="text-[60px] text-primary">Skills</h1>
-          <p className="text-[25px] mt-[-2rem]">My Technical Level</p>
+          <h1 className="text-[30px] md:text-[60px] text-primary">Skills</h1>
+          <p className="text-[15px] md:text-[25px] md:mt-[-2rem]">
+            My Technical Level
+          </p>
         </motion.div>
-        <div className="flex gap-[5rem] justify-center p-10 mt-[4rem]">
+        <div className="flex flex-wrap gap-[5rem] md:m-[4rem] justify-center md:p-10 md:mt-[4rem] ">
           <motion.div
             className="bg-white  dark:bg-primaryDark h-[250px] p-5 flex flex-col gap-3 rounded-lg shadow-xl"
             whileInView={{
@@ -35,18 +37,20 @@ const Experience = () => {
             }}
             initial={{ y: -80, opacity: 0 }}
           >
-            <h1 className="text-[30px]">Front-End</h1>
-            <div className="flex gap-2">
-              <IconButton text="HTML" color="bg-[#FF5733]">
-                <IoLogoHtml5 size={40} />
-              </IconButton>
-              <IconButton text="CSS" color="bg-[#264de4]">
-                <DiCss3 size={40} />
-              </IconButton>
+            <div className="">
+              <h1 className="text-[30px]">Front-End</h1>
+              <div className="flex gap-2">
+                <IconButton text="HTML" color="bg-[#FF5733]">
+                  <IoLogoHtml5 size={40} />
+                </IconButton>
+                <IconButton text="CSS" color="bg-[#264de4]">
+                  <DiCss3 size={40} />
+                </IconButton>
 
-              <IconButton text="JavaScript" color="bg-[#f0db4f]">
-                <IoLogoJavascript size={40} />
-              </IconButton>
+                <IconButton text="JavaScript" color="bg-[#f0db4f]">
+                  <IoLogoJavascript size={40} />
+                </IconButton>
+              </div>
             </div>
             <div className="flex gap-2">
               <IconButton text="React" color="bg-[#61DBFB]">

@@ -20,11 +20,11 @@ const Home = () => {
   };
 
   return (
-    <div className="text-black dark:text-light">
+    <div className="text-gray-500 ">
       <section className="relative flex w-full h-screen " id="home">
-        <div className="w-full flex justify-center items-center flex-col-reverse p-10 mt-[-5rem]">
+        <div className="w-full flex justify-center items-center mb-[5rem] flex-col-reverse p-10 ">
           <div className="flex flex-col max-w-[400px] xl:max-w-[700px] ">
-            <div className="pointer-events-none text-center">
+            <div className="pointer-events-none text-center text-black dark:text-light">
               <motion.h1
                 className="font-bold text-[60px]"
                 whileInView={{

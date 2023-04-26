@@ -1,5 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Navbar, Home, About, Skills, Portfolio, Footer } from "./components";
+import {
+  Navbar,
+  Home,
+  About,
+  Skills,
+  Portfolio,
+  Footer,
+  Contact,
+} from "./components";
 import Particle from "./components/Particle";
 
 const App = () => {
@@ -18,6 +26,7 @@ const App = () => {
         </div>
         <div>
           <Portfolio />
+          <Contact />
         </div>
         <Footer />
       </div>
