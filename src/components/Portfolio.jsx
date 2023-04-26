@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom"; // Add this line
 import { useState } from "react";
-import { clinic_inventory, netflix } from "../assets";
+import { clinic_inventory, netflix } from "../assets/img";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,7 +21,7 @@ import {
   SiPhp,
   SiMysql,
   SiTailwindcss,
-} from "../assets/index";
+} from "../assets/icon";
 import IconButton from "./IconButton";
 
 const Portfolio = () => {

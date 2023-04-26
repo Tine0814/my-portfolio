@@ -1,10 +1,10 @@
-import { MdDesignServices, FaMobile, BsDatabaseGear } from "../assets/index";
+import { MdDesignServices, FaMobile, BsDatabaseGear } from "../assets/icon";
 import {
   BsFacebook,
   VscGithub,
   AiFillInstagram,
   AiFillLinkedin,
-} from "../assets/index";
+} from "../assets/icon";
 
 export const navLinks = [
   {

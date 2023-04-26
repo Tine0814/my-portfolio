@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { dastine } from "../assets";
+import { dastine } from "../assets/img";
 
 const About = () => {
   return (

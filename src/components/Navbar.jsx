@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
-import { close, menu } from "../assets";
+import { close, menu } from "../assets/img";
 import { motion, useAnimationControls } from "framer-motion";
 import DarkMode from "./darkMode/DarkMode";
 

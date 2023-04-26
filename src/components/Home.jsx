@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { profile } from "../assets";
+import { profile } from "../assets/img";
 import { motion } from "framer-motion";
 import { socials } from "../constants";
 import Particle from "./Particle";

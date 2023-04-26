@@ -12,7 +12,7 @@ import {
   SiTailwindcss,
   SiBootstrap,
   BsGit,
-} from "../assets/index";
+} from "../assets/icon";
 
 const Experience = () => {
   return (
