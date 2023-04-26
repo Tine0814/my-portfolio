@@ -6,7 +6,7 @@ import { socials } from "../constants";
 import Particle from "./Particle";
 import WhatICanDo from "./WhatICanDo";
 
-const PDF_FILE_URL = "http://localhost:5173/p.pdf";
+const PDF_FILE_URL = "https://tine0814.github.io/my-portfolio/p.pdf";
 
 const Home = () => {
   const downloadFileAtURL = (url) => {
