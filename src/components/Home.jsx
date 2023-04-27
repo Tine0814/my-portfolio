@@ -6,7 +6,11 @@ import { socials } from "../constants";
 import Particle from "./Particle";
 import WhatICanDo from "./WhatICanDo";
 
+<<<<<<< HEAD
 const PDF_FILE_URL = "https://tine0814.github.io/my-portfolio/CV.pdf";
+=======
+const PDF_FILE_URL = "https://tine0814.github.io/my-portfolio/p.pdf";
+>>>>>>> 89b664fc518217138c0cab4575d08b80d6ec7eeb
 
 const Home = () => {
   const downloadFileAtURL = (url) => {
