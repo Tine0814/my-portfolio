@@ -4,7 +4,7 @@ import "./DarkMode.css";
 import useTheme from "../hooks/useTheme";
 
 const DarkMode = () => {
-  const [mode, setMode] = useTheme("light");
+  const [mode, setMode] = useTheme(null);
   return (
     <div className="dark_mode">
       <input

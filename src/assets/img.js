@@ -8,6 +8,7 @@ import clinic_inventory from "./clinic_inventory.png";
 import netflix from "./netflix.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import toDo from "./toDo.png";
 
 export {
   clinic_inventory,
@@ -20,4 +21,5 @@ export {
   close,
   menu,
   dastine,
+  toDo,
 };

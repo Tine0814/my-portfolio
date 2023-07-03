@@ -1,6 +1,12 @@
 import { useRef, useState } from "react";
 
-export default function IconButton({ children, text, color, ...props }) {
+export default function IconButton({
+  children,
+  text,
+  textColor,
+  color,
+  ...props
+}) {
   const [hovered, setHovered] = useState(false);
   const ref = useRef(null);
 
@@ -8,7 +14,7 @@ export default function IconButton({ children, text, color, ...props }) {
     <button
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`flex p-2 items-center rounded-lg text-white shadow-xl ${
+      className={`flex p-2 items-center rounded-lg ${textColor} shadow-xl ${
         color || "bg-[#171515]"
       }`}
       {...props}

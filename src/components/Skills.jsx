@@ -12,6 +12,9 @@ import {
   SiTailwindcss,
   SiBootstrap,
   BsGit,
+  SiMongodb,
+  SiExpress,
+  FaNodeJs,
 } from "../assets/icon";
 
 const Experience = () => {
@@ -40,34 +43,58 @@ const Experience = () => {
             <div className="">
               <h1 className="text-[30px]">Front-End</h1>
               <div className="flex gap-2">
-                <IconButton text="HTML" color="bg-[#FF5733]">
+                <IconButton
+                  textColor="text-white"
+                  text="HTML"
+                  color="bg-[#FF5733]"
+                >
                   <IoLogoHtml5 size={40} />
                 </IconButton>
-                <IconButton text="CSS" color="bg-[#264de4]">
+                <IconButton
+                  textColor="text-white"
+                  text="CSS"
+                  color="bg-[#264de4]"
+                >
                   <DiCss3 size={40} />
                 </IconButton>
 
-                <IconButton text="JavaScript" color="bg-[#f0db4f]">
+                <IconButton
+                  textColor="text-white"
+                  text="JavaScript"
+                  color="bg-[#f0db4f]"
+                >
                   <IoLogoJavascript size={40} />
                 </IconButton>
               </div>
             </div>
             <div className="flex gap-2">
-              <IconButton text="React" color="bg-[#61DBFB]">
+              <IconButton
+                textColor="text-white"
+                text="React"
+                color="bg-[#61DBFB]"
+              >
                 <FaReact size={40} />
               </IconButton>
 
-              <IconButton text="Bootstrap" color="bg-[#563d7c]">
+              <IconButton
+                textColor="text-white"
+                text="Bootstrap"
+                color="bg-[#563d7c]"
+              >
                 <SiBootstrap size={40} />
               </IconButton>
 
-              <IconButton text="Tailwind" color="bg-[#3490dc]">
+              <IconButton
+                textColor="text-white"
+                text="Tailwind"
+                color="bg-[#3490dc]"
+              >
                 <SiTailwindcss size={40} />
               </IconButton>
             </div>
           </motion.div>
           <motion.div
-            className="bg-white dark:bg-primaryDark h-[250px] w-[224px] p-5 flex flex-col gap-3 rounded-lg shadow-xl"
+            className="bg-white dark:bg-primaryDark h-[250px] p-5 flex flex-col gap-3 rounded-lg shadow-xl"
             whileInView={{
               y: 0,
               opacity: 1,
@@ -77,11 +104,39 @@ const Experience = () => {
           >
             <h1 className="text-[30px]">Back-End</h1>
             <div className="flex gap-2">
-              <IconButton text="PHP" color="bg-[#8993be]">
+              <IconButton
+                textColor="text-white"
+                text="MongoDB"
+                color="bg-[#589636]"
+              >
+                <SiMongodb size={40} />
+              </IconButton>
+              <IconButton
+                textColor="text-black"
+                text="Express.js"
+                color="bg-[white]"
+              >
+                <SiExpress size={40} />
+              </IconButton>
+              <IconButton
+                textColor="text-white"
+                text="Node.js"
+                color="bg-[#68A063]"
+              >
+                <FaNodeJs size={40} />
+              </IconButton>
+            </div>
+            <div className="flex gap-2">
+              <IconButton
+                textColor="text-white"
+                text="PHP"
+                color="bg-[#8993be]"
+              >
                 <SiPhp size={40} />
               </IconButton>
 
               <IconButton
+                textColor="text-white"
                 text="MySQL"
                 color="bg-gradient-to-r from-[#00758f] to-[#f29111]"
               >
@@ -100,10 +155,14 @@ const Experience = () => {
           >
             <h1 className="text-[30px]">Others</h1>
             <div className="flex gap-2">
-              <IconButton text="github">
+              <IconButton textColor="text-white" text="github">
                 <VscGithub size={40} />
               </IconButton>
-              <IconButton text="git" color="bg-[#f34f29]">
+              <IconButton
+                textColor="text-white"
+                text="git"
+                color="bg-[#f34f29]"
+              >
                 <BsGit size={40} />
               </IconButton>
             </div>
