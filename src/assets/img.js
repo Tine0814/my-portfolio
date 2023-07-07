@@ -9,7 +9,7 @@ import netflix from "./netflix.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import toDo from "./toDo.png";
-import dragonball from "./dragonball.png";
+import dragon from "./dragon.png";
 
 export {
   clinic_inventory,
@@ -23,5 +23,5 @@ export {
   menu,
   dastine,
   toDo,
-  dragonball,
+  dragon,
 };

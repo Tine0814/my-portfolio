@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom"; // Add this line
 import { useState } from "react";
-import { clinic_inventory, dragonball, toDo } from "../assets/img";
+import { clinic_inventory, dragon, toDo } from "../assets/img";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -89,7 +89,7 @@ const Portfolio = () => {
                     <div className="w-[294px] h-[220px] rounded-xl shadow-md flex justify-center items-center">
                       <div className="w-full h-full overflow-hidden rounded-xl">
                         <motion.img
-                          src={dragonball}
+                          src={dragon}
                           alt=""
                           whileHover={{
                             scale: 1.1,
