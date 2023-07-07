@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom"; // Add this line
 import { useState } from "react";
-import { clinic_inventory, netflix, toDo } from "../assets/img";
+import { clinic_inventory, dragonball, toDo } from "../assets/img";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -78,6 +78,58 @@ const Portfolio = () => {
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
+              <SwiperSlide>
+                <div className="flex gap-10 flex-wrap">
+                  <div className="relative flex flex-col bg-white dark:bg-primaryDark gap-4 w-[369px] p-[30px] rounded-xl shadow-2xl">
+                    <div className="absolute top-2 left-3 flex gap-2">
+                      <div className="w-[10px] h-[10px] bg-[#ff605c] rounded-full"></div>
+                      <div className="w-[10px] h-[10px] bg-[#ffbd44] rounded-full"></div>
+                      <div className="w-[10px] h-[10px] bg-[#00ca4e] rounded-full"></div>
+                    </div>
+                    <div className="w-[294px] h-[220px] rounded-xl shadow-md flex justify-center items-center">
+                      <div className="w-full h-full overflow-hidden rounded-xl">
+                        <motion.img
+                          src={dragonball}
+                          alt=""
+                          whileHover={{
+                            scale: 1.1,
+                            transition: { duration: 0.8 },
+                          }}
+                        />
+                      </div>
+                    </div>
+                    <h2 className="text-[30px]">
+                      Dragonball Game Landing Page
+                    </h2>
+                    <div className="flex gap-2 justify-center">
+                      <IconButton
+                        textColor="text-white"
+                        text="React"
+                        color="bg-[#61DBFB]"
+                      >
+                        <FaReact size={30} />
+                      </IconButton>
+                      <IconButton
+                        textColor="text-white"
+                        text="Tailwind"
+                        color="bg-[#3490dc]"
+                      >
+                        <SiTailwindcss size={30} />
+                      </IconButton>
+                    </div>
+                    <div className="flex justify-center">
+                      <motion.a
+                        whileHover={{ scale: 1.2 }}
+                        href=""
+                        target="_blank"
+                        className="bg-primary text-light w-[90px] h-[30px] grid place-items-center rounded-md "
+                      >
+                        Visit Site{" "}
+                      </motion.a>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
               <SwiperSlide>
                 <div className="flex gap-10 flex-wrap">
                   <div className="relative flex flex-col bg-white dark:bg-primaryDark gap-4 w-[369px] p-[30px] rounded-xl shadow-2xl">
