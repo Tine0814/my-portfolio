@@ -98,7 +98,7 @@ const Portfolio = () => {
                         />
                       </div>
                     </div>
-                    <h2 className="text-[30px]">ToDo LIST </h2>
+                    <h2 className="text-[30px]">Task Management </h2>
                     <div className="flex gap-2 justify-center">
                       <IconButton
                         textColor="text-white"
@@ -139,7 +139,7 @@ const Portfolio = () => {
                     <div className="flex justify-center">
                       <motion.a
                         whileHover={{ scale: 1.2 }}
-                        href=""
+                        href="https://to-do-list-mern-stack-frontend.vercel.app/"
                         className="bg-primary text-light w-[90px] h-[30px] grid place-items-center rounded-md "
                       >
                         Visit Site{" "}
