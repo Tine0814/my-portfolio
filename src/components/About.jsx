@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full h-screen text-gray-500 flex justify-center items-center text-[10] md:text-[25px] relative "
+      className="w-full text-gray-500 flex justify-center items-center text-[10] md:text-[25px] relative "
     >
       <div className="w-full flex justify-center flex-col xl:flex-row items-center md:p-20 text-center ">
         <div className="max-w-[700px] flex flex-col gap-7 p-10">
@@ -30,10 +30,12 @@ const About = () => {
             initial={{ y: 100, opacity: 0 }}
           >
             Hello! My name is Dastine, and I love turning my ideas into
-            innovative web applications. My interest in web development started
-            back in 2021, when I decided to try developing my first ever HTML
-            code with CSS ('Hello Word'). It turns out I love manipulating
-            things in the browser.
+            innovative web applications. Gained valuable experience as a
+            Frontend Developer during my internship, working on various web
+            development projects. Skilled in Web Development, MongoDb, Express,
+            React, Node.js, PHP, and Sql. Experienced in creating responsive and
+            user-friendly web applications. Holds a Bachelor of Science - BS
+            degree focused in Information System from Richwell College, Inc
           </motion.p>
           <motion.p
             whileInView={{
@@ -43,7 +45,7 @@ const About = () => {
             }}
             initial={{ y: 100, opacity: 0 }}
           >
-            I want to be the best at my professionm, and i'm constantly looking
+            I want to be the best at my profession, and i'm constantly looking
             to further my abilities.
           </motion.p>
         </div>
@@ -56,7 +58,7 @@ const About = () => {
           }}
           initial={{ y: 100, opacity: 0 }}
         >
-          <div className=" w-[490px] h-[450px] hidden xl:flex justify-center items-center">
+          <div className=" w-[490px] h-[450px]  xl:flex justify-center  items-center">
             <img src={dastine} alt="" className="rounded-xl shadow-2xl" />
           </div>
         </motion.div>

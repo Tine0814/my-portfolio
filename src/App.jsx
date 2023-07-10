@@ -15,15 +15,15 @@ import { LoadingComponent } from "./components/Loading/LoadingComponent";
 const App = () => {
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
+  // useEffect(() => {
+  //   setLoading(true);
 
-    const delay = setTimeout(() => {
-      setLoading(false);
-    }, 5000);
+  //   const delay = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5000);
 
-    return () => clearTimeout(delay);
-  }, []);
+  //   return () => clearTimeout(delay);
+  // }, []);
   return (
     <BrowserRouter>
       <Particle />

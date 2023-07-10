@@ -123,7 +123,7 @@ const Home = () => {
             >
               <div className="relative w-full h-full rounded-full flex justify-center items-center">
                 <motion.span
-                  className="span"
+                  className="span bg-gradient-to-r from-primary to-[#001C30]"
                   animate={{ rotate: 360 }}
                   transition={{
                     duration: 5,
