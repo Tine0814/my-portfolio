@@ -19,7 +19,7 @@ import {
 
 const Experience = () => {
   return (
-    <section className=" relative w-full h-screen flex justify-center items-center mt-[-25rem] md:mt-0 text-gray-500">
+    <section className=" relative w-full h-screen  flex justify-center items-center mt-[-25rem] md:mt-0 text-gray-500">
       <div className="text-center mt-[-5rem] absolute top-40">
         <motion.div
           whileInView={{ y: 0, transition: { duration: 0.8 }, opacity: 1 }}

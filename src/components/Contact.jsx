@@ -7,7 +7,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const Contact = () => {
   return (
-    <section className="relative w-full flex justify-center flex-col p-5 text-black">
+    <section className="relative w-full mt-[10rem] flex justify-center flex-col p-5 text-black">
       <div className="text-center">
         <h1 className="text-[60px] text-primary font-bold">Contact Me</h1>
         <h1 className="text-[30px] text-center mt-[-2rem] text-gray-500">
