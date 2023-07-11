@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { profile } from "../assets/img";
 import { motion } from "framer-motion";
 import { socials } from "../constants";
-import Particle from "./Particle";
 import WhatICanDo from "./WhatICanDo";
+import "animate.css";
 
 const PDF_FILE_URL = "https://tine0814.github.io/my-portfolio/CV.pdf";
 
@@ -25,40 +24,18 @@ const Home = () => {
         <div className="w-full flex justify-center items-center mb-[5rem] flex-col-reverse p-10 ">
           <div className="flex flex-col max-w-[400px] xl:max-w-[700px] ">
             <div className="pointer-events-none text-center text-black dark:text-light">
-              <motion.h1
-                className="font-bold text-[60px]"
-                whileInView={{
-                  x: 0,
-                  transition: { duration: 0.8 },
-                  opacity: 1,
-                }}
-                initial={{ x: -200, opacity: 0.3 }}
-              >
+              <h1 className="font-bold text-[60px] animate__animated animate__backInLeft  ">
                 Dastine Bernardo
-              </motion.h1>
-              <motion.h2
-                className="text-[30px] "
-                whileInView={{
-                  x: 0,
-                  transition: { duration: 0.8 },
-                  opacity: 1,
-                }}
-                initial={{ x: 200, opacity: 0.3 }}
-              >
+              </h1>
+              <h2 className="text-[30px] animate__animated animate__backInRight ">
                 Aspiring <span className="text-primary">Web Developer </span>
                 from Philippines
-              </motion.h2>
+              </h2>
             </div>
             <div className="flex gap-3 text-[20px] justify-center ">
               <motion.div
-                className="bg-primary text-light w-[90px] h-[30px] grid place-items-center rounded-md "
+                className="bg-primary text-light w-[90px] h-[30px] grid place-items-center rounded-md animate__animated animate__backInLeft"
                 whileHover={{ scale: 1.2 }}
-                whileInView={{
-                  x: 0,
-                  transition: { duration: 0.8 },
-                  opacity: 1,
-                }}
-                initial={{ x: -100, opacity: 0 }}
               >
                 <button
                   onClick={() => {
@@ -69,26 +46,12 @@ const Home = () => {
                 </button>
               </motion.div>
               <motion.div
-                className="bg-primary text-light w-[80px] h-[30px] grid place-items-center rounded-md  "
+                className="bg-primary text-light w-[80px] h-[30px] grid place-items-center rounded-md animate__animated animate__backInUp  "
                 whileHover={{ scale: 1.2 }}
-                whileInView={{
-                  y: 0,
-                  transition: { duration: 0.8 },
-                  opacity: 1,
-                }}
-                initial={{ y: 30, opacity: 0 }}
               >
                 <a href="#project">Projects</a>
               </motion.div>
-              <motion.div
-                className="flex items-center"
-                whileInView={{
-                  x: 0,
-                  transition: { duration: 0.8 },
-                  opacity: 1,
-                }}
-                initial={{ x: 100, opacity: 0 }}
-              >
+              <div className="flex items-center animate__animated animate__backInRight">
                 <ul className="flex flex-row gap-2 text-black dark:text-light">
                   {socials.map((social) => (
                     <motion.li
@@ -105,13 +68,10 @@ const Home = () => {
                     </motion.li>
                   ))}
                 </ul>
-              </motion.div>
+              </div>
             </div>
           </div>
-          <motion.div
-            whileInView={{ scale: 1, opacity: 1, transition: { duration: 1 } }}
-            initial={{ scale: 0, opacity: 0.2 }}
-          >
+          <div className="animate__animated animate__flipInY">
             <motion.div
               className="w-[250px] h-[250px]"
               whileInView={{ y: [0, -20, 0] }}
@@ -140,7 +100,7 @@ const Home = () => {
                 </div>
               </div>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </section>
       <WhatICanDo />

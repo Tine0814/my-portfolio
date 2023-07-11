@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full text-gray-500 flex justify-center items-center text-[10] md:text-[25px] relative "
+      className=" w-full text-gray-500 flex justify-center items-center text-[10] md:text-[25px] relative p-"
     >
       <div className="w-full flex justify-center flex-col xl:flex-row items-center md:p-20 text-center ">
         <div className="max-w-[700px] flex flex-col gap-7 p-10">
@@ -58,7 +58,7 @@ const About = () => {
           }}
           initial={{ y: 100, opacity: 0 }}
         >
-          <div className=" w-[490px] h-[450px]  xl:flex justify-center  items-center">
+          <div className="w-[250px] h-[290px] md:w-[490px] md:h-[450px]  xl:flex justify-center  items-center">
             <img src={dastine} alt="" className="rounded-xl shadow-2xl" />
           </div>
         </motion.div>

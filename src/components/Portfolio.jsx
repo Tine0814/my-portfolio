@@ -32,7 +32,7 @@ const Portfolio = () => {
 
   return (
     <section
-      className="w-full h-screen  text-gray-500  flex justify-center items-center text-[20px] mt-[40rem] md:mt-[20rem] xl:mt-0"
+      className="w-full h-screen text-gray-500  flex justify-center items-center text-[20px] mt-[10rem] md:mt-[20rem] xl:mt-0"
       id="project"
     >
       <div className="w-[70%]">
@@ -80,7 +80,7 @@ const Portfolio = () => {
             >
               <SwiperSlide>
                 <div className="flex gap-10 flex-wrap">
-                  <div className="relative flex flex-col bg-white dark:bg-primaryDark gap-4 w-[369px] p-[30px] rounded-xl shadow-2xl">
+                  <div className="relative flex flex-col bg-white dark:bg-primaryDark gap-4 p-10 md:w-[369px] md:p-[30px] rounded-xl shadow-2xl">
                     <div className="absolute top-2 left-3 flex gap-2">
                       <div className="w-[10px] h-[10px] bg-[#ff605c] rounded-full"></div>
                       <div className="w-[10px] h-[10px] bg-[#ffbd44] rounded-full"></div>
