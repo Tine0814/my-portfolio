@@ -18,21 +18,120 @@ const Home = () => {
     aTag.remove();
   };
 
+  // const Circle = () => {
+  //   let circleCount = 7;
+  //   let circles = [];
+
+  //   for (let i = 0; i < circleCount; i++) {
+  //     let positionOptionsX = [`right`, `left`];
+  //     let positionOptionsY = [`bottom`, `top`];
+  //     let randomPositionX =
+  //       positionOptionsX[Math.floor(Math.random() * positionOptionsX.length)];
+  //     let randomPositionY =
+  //       positionOptionsY[Math.floor(Math.random() * positionOptionsY.length)];
+  //     let randomNumberX = Math.floor(Math.random() * 100);
+  //     let randomNumberY = Math.floor(Math.random() * 100);
+  //     console.log(
+  //       randomNumberX,
+  //       randomNumberY,
+  //       randomPositionX,
+  //       randomPositionY
+  //     );
+  //     circles.push(
+  //       <motion.div
+  //         key={i}
+  //         initial={{ scale: 1 }}
+  //         // animate={{ scale: [0, 1.2, 0] }}
+  //         // transition={{
+  //         //   duration: 1,
+  //         //   ease: "easeInOut",
+  //         //   repeat: Infinity,
+  //         //   repeatType: "loop",
+  //         //   delay: 4,
+  //         // }}
+  //         className={`${randomPositionX}-${randomNumberX} ${randomPositionY}-${randomNumberY}bg-primary absolute  circle-3d`}
+  //       ></motion.div>
+  //     );
+  //   }
+  //   return <div>{circles}</div>;
+  // };
+
   return (
     <div className="text-gray-500 ">
       <section className="relative flex w-full h-screen " id="home">
+        {/* {Circle()} */}
+        {/* <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: [0, 1.2, 0] }}
+          transition={{
+            duration: 5,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+            delay: 4,
+          }}
+          className="absolute right-0 top-32 circle-3d"
+        ></motion.div>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: [0, 1.2, 0] }}
+          transition={{
+            duration: 5,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+            delay: 4,
+          }}
+          className="absolute right-0 top-32 circle-3d"
+        ></motion.div>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: [0, 1.2, 0] }}
+          transition={{
+            duration: 5,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+            delay: 2,
+          }}
+          className="absolute right-32 top-62 circle-3d"
+        ></motion.div>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: [0, 1.2, 0] }}
+          transition={{
+            duration: 5,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+            delay: 1,
+          }}
+          className=" circle-3d absolute left-0 top-10 shadow-md w-[100px] h-[100px] rounded-full"
+        ></motion.div>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: [0, 1.2, 0] }}
+          transition={{
+            duration: 5,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "loop",
+            delay: 2,
+          }}
+          className=" bg-primary absolute left-32 bottom-10 circle-3d  w-[100px] h-[100px] rounded-full"
+        ></motion.div> */}
         <div className="w-full flex justify-center items-center mb-[5rem] flex-col-reverse p-10 ">
           <div className="flex flex-col max-w-[400px] xl:max-w-[700px] ">
             <div className="pointer-events-none text-center text-black dark:text-light">
-              <h1 className="font-bold text-[60px] animate__animated animate__backInLeft  ">
+              <h1 className="  font-bold text-[60px] animate__animated animate__backInLeft  ">
                 Dastine Bernardo
               </h1>
-              <h2 className="text-[30px] animate__animated animate__backInRight ">
-                Aspiring <span className="text-primary">Web Developer </span>
+              <h2 className="text-[40px] animate__animated animate__backInRight ">
+                <span className="text-primary">Web Developer </span>
                 from Philippines
               </h2>
             </div>
-            <div className="flex gap-3 text-[20px] justify-center ">
+            <div className="flex gap-3 text-[20px] justify-center p-2  ">
               <motion.div
                 className="bg-primary text-light w-[90px] h-[30px] grid place-items-center rounded-md animate__animated animate__backInLeft"
                 whileHover={{ scale: 1.2 }}
