@@ -155,3 +155,15 @@ html {
     0 0 0px #03bcf4, 0 0 0px #03bcf4;
   filter: blur(1px);
 }
+
+/* @media screen(max-width: 527px) {
+  .media {
+    margin-top: 100rem;
+  }
+} */
+
+@media screen and (max-width: 527px) {
+  .media-512 {
+    margin-top: 30rem;
+  }
+}

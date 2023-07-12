@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { socials } from "../constants";
 import WhatICanDo from "./WhatICanDo";
 import "animate.css";
+import { triangle } from "maath";
 
 const PDF_FILE_URL = "https://tine0814.github.io/my-portfolio/CV.pdf";
 

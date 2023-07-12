@@ -32,7 +32,7 @@ const Portfolio = () => {
 
   return (
     <section
-      className="w-full h-screen text-gray-500  flex justify-center items-center text-[20px] mt-[10rem] md:mt-[20rem] xl:mt-0"
+      className="w-full h-screen media-512 text-gray-500  flex justify-center items-center text-[20px] mt-[10rem] md:mt-[20rem] xl:mt-0"
       id="project"
     >
       <div className="w-[70%]">

@@ -30,7 +30,7 @@ const Experience = () => {
             My Technical Level
           </p>
         </motion.div>
-        <div className="flex flex-wrap gap-[5rem] md:m-[4rem] justify-center md:p-10 md:mt-[4rem] ">
+        <div className="flex flex-wrap gap-[5rem] md:m-[4rem] justify-center md:p-10 md:mt-[4rem]">
           <motion.div
             className="bg-white  dark:bg-primaryDark h-[250px] p-5 flex flex-col gap-3 rounded-lg shadow-xl"
             whileInView={{
