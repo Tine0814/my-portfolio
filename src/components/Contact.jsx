@@ -20,6 +20,7 @@ const schema = z.object({
 
 const Contact = () => {
   const [sending, setSending] = useState(false);
+
   const form = useRef();
   const {
     handleSubmit,
@@ -58,7 +59,7 @@ const Contact = () => {
       );
   };
   return (
-    <section className="relative w-full mt-[10rem] flex justify-center flex-col md:p-5 text-black">
+    <section className="relative p-20  w-full  flex justify-center flex-col md:p-5 text-black">
       <ToastContainer
         theme={
           window.localStorage.getItem("theme") === "dark" ? "dark" : "light"
@@ -67,7 +68,7 @@ const Contact = () => {
       <motion.div
         whileInView={{ y: 0, transition: { duration: 0.4 }, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
-        className="text-center"
+        className="text-center mt-20"
       >
         <h1 className="text-[60px] text-primary font-bold">Contact Me</h1>
         <h1 className="text-[30px] text-center mt-[-2rem] text-gray-500">

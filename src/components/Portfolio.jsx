@@ -32,11 +32,11 @@ const Portfolio = () => {
 
   return (
     <section
-      className="w-full h-screen media-512 text-gray-500  flex justify-center items-center text-[20px] mt-[10rem] md:mt-[20rem] xl:mt-0"
+      className="relative w-full  h-screen media-512 text-gray-500  flex justify-center items-center text-[20px] mt-[10rem] md:mt-[20rem] xl:mt-0"
       id="project"
     >
       <div className="w-[70%]">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col ">
           <motion.div
             className="flex flex-col"
             whileInView={{ y: 0, transition: { duration: 0.8 }, opacity: 1 }}
