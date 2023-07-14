@@ -59,7 +59,7 @@ const Contact = () => {
       );
   };
   return (
-    <section className="relative p-20  w-full  flex justify-center flex-col md:p-5 text-black">
+    <section className="relative w-full  flex justify-center flex-col md:p-5 text-black">
       <ToastContainer
         theme={
           window.localStorage.getItem("theme") === "dark" ? "dark" : "light"
