@@ -51,17 +51,17 @@ export const socials = [
   },
   {
     icon: <AiFillLinkedin size="1.5rem" />,
-    url: "https://github.com/Tine0814 ",
+    url: "https://www.linkedin.com/in/dastine-bernardo-148499254/",
     key: "linkedin",
   },
   {
     icon: <AiFillInstagram size="1.5rem" />,
-    url: "https://github.com/Tine0814 ",
+    url: "https://www.instagram.com/dstnnnnnnnnnn/",
     key: "instagram",
   },
   {
     icon: <BsFacebook size="1.5rem" />,
-    url: "https://github.com/Tine0814 ",
+    url: "https://www.facebook.com/Dastinebernardo",
     key: "facebook",
   },
 ];
