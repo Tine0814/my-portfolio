@@ -10,6 +10,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import toDo from "./toDo.png";
 import dragon from "./dragon.png";
+import letquiz from "./letQuiz.png";
 
 export {
   clinic_inventory,
@@ -24,4 +25,5 @@ export {
   dastine,
   toDo,
   dragon,
+  letquiz,
 };

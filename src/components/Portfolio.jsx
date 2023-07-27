@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom"; // Add this line
 import { useState } from "react";
-import { clinic_inventory, dragon, toDo } from "../assets/img";
+import { clinic_inventory, dragon, toDo, letquiz } from "../assets/img";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -89,7 +89,7 @@ const Portfolio = () => {
                     <div className="w-[294px] h-[220px] rounded-xl shadow-md flex justify-center items-center">
                       <div className="w-full h-full overflow-hidden rounded-xl">
                         <motion.img
-                          src={dragon}
+                          src={letquiz}
                           alt=""
                           whileHover={{
                             scale: 1.1,
@@ -98,9 +98,7 @@ const Portfolio = () => {
                         />
                       </div>
                     </div>
-                    <h2 className="text-[30px]">
-                      Dragonball Game Landing Page
-                    </h2>
+                    <h2 className="text-[30px]">Let Quiz</h2>
                     <div className="flex gap-2 justify-center">
                       <IconButton
                         textColor="text-white"
@@ -120,7 +118,7 @@ const Portfolio = () => {
                     <div className="flex justify-center">
                       <motion.a
                         whileHover={{ scale: 1.2 }}
-                        href=""
+                        href="https://let-quiz.vercel.app/"
                         target="_blank"
                         className="bg-primary text-light w-[90px] h-[30px] grid place-items-center rounded-md "
                       >
